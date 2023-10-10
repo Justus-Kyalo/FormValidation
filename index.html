@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/a2fab5f0b8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="outer-container">
+      <form action=" ">
+        <span class="telegram-icon"><img src="telegram-xxl.png" alt="" /></span>
+        <div class="group-inputs">
+          <label for="">Full Name &#42;</label>
+
+          <input
+            id="name"
+            type="text"
+            placeholder="Enter your name"
+            onkeyup="validateName()"
+          />
+          <span class="name-error"></span>
+        </div>
+        <div class="group-inputs">
+          <label for="">phone No &#42;</label>
+
+          <input
+            type="tel"
+            id="phone"
+            placeholder="0792374057"
+            onkeyup="validatePhoneNumber()"
+          />
+          <span class="phone-error"></span>
+        </div>
+        <div class="group-inputs">
+          <label for="">Email Id &#42;</label>
+
+          <input
+            type="email"
+            placeholder="Enter your email"
+            id="email"
+            onkeyup="validateEmail()"
+          />
+          <span class="email-error"></span>
+        </div>
+        <div class="group-inputs">
+          <label for="">your message &#42;</label>
+
+          <textarea
+            placeholder="Enter your message"
+            id="message"
+            rows="3"
+            onkeyup="messageValidation()"
+          ></textarea>
+          <span class="message-error"></span>
+        </div>
+        <div class="submit-btn">
+          <div class="btndiv">
+            <button onclick=" return formValidation()">Submit</button>
+          </div>
+          <div class="submit-error"></div>
+        </div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
