@@ -24,11 +24,7 @@ const validatePhoneNumber = () => {
     phoneError.textContent = "Phone number is required";
     return false;
   }
-  if (phoneNumber.length !== 10) {
-    phoneError.textContent = "phone must be at least 10 digits";
-    return false;
-  }
-  if (!phoneNumber.match(/^[0-9]*$/)) {
+  if (!phoneNumber.match(/^[0-9]{10}$/)) {
     phoneError.textContent = "Enter valid phone number";
     return false;
   }
